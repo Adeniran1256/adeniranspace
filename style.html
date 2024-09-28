@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeniran Gbadebo Seun | Space Physics Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script> <!-- JavaScript for interactivity -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Adeniran Gbadebo Seun</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h2>Welcome to My Space Physics Portfolio</h2>
+            <p>Researcher in ionospheric dynamics, space weather, and additive manufacturing.</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am Adeniran Gbadebo Seun, a PhD student in Space Geophysics, focusing on the dynamics of the ionosphere and travelling ionospheric disturbances.
+            </p>
+            <p>Academic background: MSc in Sustainable Development Practice, BSc in Agricultural Engineering.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" onclick="openModal('modal1')">
+                    <h3>Travelling Ionospheric Disturbances</h3>
+                    <p>Researching TIDs and their impact on space weather systems.</p>
+                </div>
+                <div class="project-card" onclick="openModal('modal2')">
+                    <h3>Additive Manufacturing</h3>
+                    <p>Investigating the application of Wire Arc Additive Manufacturing in space engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <p id="form-response"></p> <!-- For success/failure messages -->
+        </div>
+    </section>
+
+    <!-- Modal Structure for Project Details -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h3>Travelling Ionospheric Disturbances</h3>
+            <p>In-depth details about TIDs research and findings...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h3>Wire Arc Additive Manufacturing</h3>
+            <p>More about the application of additive manufacturing in space research...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adeniran Gbadebo Seun</p>
+    </footer>
+</body>
+</html>
